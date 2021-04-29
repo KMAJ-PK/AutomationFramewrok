@@ -1,0 +1,42 @@
+Multiple failures or warnings in test:
+  1) Basket is not empty
+  2) Error retrieving web element user-name with exception OpenQA.Selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=90.0.4430.85)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Support.UI.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   at WebFramework.SeleniumWait.Until(Func`2 element, Double timeoutInSeconds, Double pollingIntervalSeconds) in C:\Projects\AutomationFramewrok\Automation\WebFramework\SeleniumWait.cs:line 24
+   at WebFramework.ControlFactory.GetElement(String id) in C:\Projects\AutomationFramewrok\Automation\WebFramework\ControlFactory.cs:line 24
+NUnit.Framework.AssertionException: Multiple failures or warnings in test:
+  1) Basket is not empty
+  2) Error retrieving web element user-name with exception OpenQA.Selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=90.0.4430.85)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Support.UI.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   at WebFramework.SeleniumWait.Until(Func`2 element, Double timeoutInSeconds, Double pollingIntervalSeconds) in C:\Projects\AutomationFramewrok\Automation\WebFramework\SeleniumWait.cs:line 24
+   at WebFramework.ControlFactory.GetElement(String id) in C:\Projects\AutomationFramewrok\Automation\WebFramework\ControlFactory.cs:line 24
+
+   at NUnit.Framework.Assert.ReportFailure(String message)
+   at NUnit.Framework.Assert.Fail(String message, Object[] args)
+   at NUnit.Framework.Assert.Fail(String message)
+   at WebFramework.ControlFactory.GetElement(String id) in C:\Projects\AutomationFramewrok\Automation\WebFramework\ControlFactory.cs:line 32
+   at WebFramework.ControlFactory.CreateTextBox(String id) in C:\Projects\AutomationFramewrok\Automation\WebFramework\ControlFactory.cs:line 78
+   at WebFramework.LoginDriver.get_UserNameTextBox() in C:\Projects\AutomationFramewrok\Automation\WebFramework\UiDrivers\LoginDriver.cs:line 24
+   at TestFramework.CommonSteps.GivenThatIHaveEnteredAValidUsernameAndPassword() in C:\Projects\AutomationFramewrok\Automation\TestFramework\Steps\CommonSteps.cs:line 31
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Bindings\BindingInvoker.cs:line 73
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 569
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance) in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 493
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep() in D:\a\1\s\TechTalk.SpecFlow\Infrastructure\TestExecutionEngine.cs:line 268
+   at TechTalk.SpecRun.SpecFlowPlugin.Runtime.RunnerTestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors() in D:\a\1\s\TechTalk.SpecFlow\TestRunner.cs:line 60
+   at TestFramework.Features.BuildingUpOnlineOrderFeature.ScenarioCleanup()
+   at TestFramework.Features.BuildingUpOnlineOrderFeature.ClickingAddCartButtonInitiatesOnlineOrder() in C:\Projects\AutomationFramewrok\Automation\TestFramework\Features\BuildingUpOnlineOrder.feature:line 13
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TestNodeTask.Execute()

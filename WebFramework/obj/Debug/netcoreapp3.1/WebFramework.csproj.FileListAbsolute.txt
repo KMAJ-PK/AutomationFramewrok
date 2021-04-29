@@ -1,0 +1,8 @@
+C:\Projects\Automation\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.deps.json
+C:\Projects\Automation\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.dll
+C:\Projects\Automation\WebFramework\bin\Debug\netcoreapp3.1\WebFramework.pdb
+C:\Projects\Automation\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.AssemblyInfoInputs.cache
+C:\Projects\Automation\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.AssemblyInfo.cs
+C:\Projects\Automation\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.csproj.CoreCompileInputs.cache
+C:\Projects\Automation\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.dll
+C:\Projects\Automation\WebFramework\obj\Debug\netcoreapp3.1\WebFramework.pdb
